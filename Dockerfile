@@ -12,19 +12,8 @@ RUN apt-get -y install nginx
 RUN apt-get -y install php5-fpm
 
 
-
-
-
-
-
-
-
-RUN /bin/echo 'Hello world'
-
-CMD "echo" "Hello docker!"
-
-
-
+#RUN /bin/echo 'Hello world'
+#CMD "echo" "Hello docker!"
 
 
 EXPOSE 80
