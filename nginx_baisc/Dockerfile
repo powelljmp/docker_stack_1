@@ -11,6 +11,8 @@ MAINTAINER Maintaner Name
 
 
 # Install Nginx
+
+
 # Add application repository URL to the default sources
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 
@@ -19,9 +21,6 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt
 RUN apt-get update
 
 
-
-###################################################
-
 # Install necessary tools
 RUN apt-get install -y nano 
 #wget dialog net-tools
@@ -29,16 +28,6 @@ RUN apt-get install -y nano
 # Download and Install Nginx
 RUN apt-get install -y nginx
 
-# Downlad and Install GIT
-RUN apt-get install git-core
-
-
-
-
-
-
-
-###################################################
 
 # Remove the default Nginx configuration file
 RUN rm -v /etc/nginx/nginx.conf
